@@ -3,16 +3,6 @@ function Rocket() {
 	strokeWeight(2)
 	rectMode(CENTER)
 
-	// Rocket's X and Y position
-	var rocketpos = createVector(windowWidth / 2, windowHeight / 2)
-	// Rocket's horizontal speed
-	var speedx = createVector(3, 0)
-	// Rocket's vertical speed
-	var speedy = createVector(0, 3)
-	// Rocket's position as variables
-	var rocketx = rocketpos.x
-	var rockety = rocketpos.y
-	// Rocket's new position
 
 	translate(rocketpos.x, rocketpos.y)
 	rotate(angle)

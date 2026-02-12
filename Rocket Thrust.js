@@ -1,5 +1,9 @@
 function Thrust(){
 	if (keyIsDown(87)){
-		rocketpos.add(speedy)
+		verticalvel = createVector(0, -5)
+		p5.Vector.add(verticalvel, rocketpos)
+	}
+	else if (keyIsDown(83)){
+
 	}
 }
