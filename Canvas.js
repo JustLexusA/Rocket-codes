@@ -9,9 +9,7 @@
 
 	var angle = 0
 	var rotationamount = 2
-	var verticalvel = createVector(0, -5)
-	var horizontalvel = createVector(5, 0)
-
+	
 	// Size of the rocket
 	let rocketsize = 75;
 
