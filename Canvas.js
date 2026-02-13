@@ -10,7 +10,7 @@ var rotationamount = 2
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(100);
-	AngleMode(DEGREES)
+	angleMode(DEGREES)
 	frameRate(60)
 
 }

@@ -28,5 +28,5 @@ function Rocket() {
 	circle(0, 0 - rocketSize / 3, rocketSize / 2)
 	// Tip of rocket
 	fill('rgb(255, 50, 50)')
-	triAngle(0, 0 - rocketSize * 2, 0 - rocketSize / 2, 0 - rocketSize, 0 + rocketSize / 2, 0 - rocketSize)
+	triangle(0, 0 - rocketSize * 2, 0 - rocketSize / 2, 0 - rocketSize, 0 + rocketSize / 2, 0 - rocketSize)
 }
