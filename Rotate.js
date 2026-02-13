@@ -1,7 +1,7 @@
 function Rotate() {
-	if (keyIsDown(LEFT_ARROW)) {
+	if (keyIsDown(87)) {
 		angle -= rotationamount
-	} else if (keyIsDown(RIGHT_ARROW)) {
+	} else if (keyIsDown(83)) {
 		angle += rotationamount
 	}
 }
