@@ -4,14 +4,14 @@ function Rocket() {
 	rectMode(CENTER)
 
 	// Rocket's X and Y position
-	var rocketpos = createVector(windowWidth / 2, windowHeight / 2)
+	var rocketPos = createVector(windowWidth / 2, windowHeight / 2)
 	// Rocket's position as variables
-	var rocketx = rocketpos.x
-	var rockety = rocketpos.y
+	var rocketx = rocketPos.x
+	var rockety = rocketPos.y
 	// Rocket's new position
 
-	translate(rocketpos.x, rocketpos.y)
-	rotate(angle)
+	translate(rocketPos.x, rocketPos.y)
+	rotate(Angle)
 	
 	// Rocket body
 	fill('rgb(255, 50, 50)')
@@ -28,5 +28,5 @@ function Rocket() {
 	circle(0, 0 - rocketSize / 3, rocketSize / 2)
 	// Tip of rocket
 	fill('rgb(255, 50, 50)')
-	triangle(0, 0 - rocketSize * 2, 0 - rocketSize / 2, 0 - rocketSize, 0 + rocketSize / 2, 0 - rocketSize)
+	triAngle(0, 0 - rocketSize * 2, 0 - rocketSize / 2, 0 - rocketSize, 0 + rocketSize / 2, 0 - rocketSize)
 }

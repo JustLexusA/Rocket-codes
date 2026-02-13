@@ -1,9 +1,9 @@
 	var rocketx;
 	var rockety;
-	var rocketpos;
+	var rocketPos;
 
 
-var angle = 90
+var Angle = 90
 var rotationamount = 2
 	var speedx;
 	var speedy;
@@ -14,7 +14,7 @@ var rotationamount = 2
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(100);
-	angleMode(DEGREES)
+	AngleMode(DEGREES)
 	frameRate(60)
 
 }

@@ -1,5 +1,5 @@
 function Thrust(){
 	if (keyIsDown(87)){
-		rocketpos.add(speedy)
+		rocketPos.add(speedy)
 	}
 }
