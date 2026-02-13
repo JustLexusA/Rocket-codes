@@ -1,5 +1,6 @@
-
-
+var rocketPos;
+var rocketx;
+var rockety;
 
 var Angle = 90
 var rotationamount = 2
@@ -13,4 +14,10 @@ function setup() {
 	angleMode(DEGREES)
 	frameRate(60)
 
+		// Rocket's X and Y position
+	 rocketPos = createVector(windowWidth / 2, windowHeight / 2)
+	// Rocket's position as variables
+	 rocketx = rocketPos.x
+	 rockety = rocketPos.y
+	// Rocket's new position
 }

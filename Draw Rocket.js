@@ -3,13 +3,15 @@ function Rocket() {
 	strokeWeight(2)
 	rectMode(CENTER)
 
-	// Rocket's X and Y position
-	var rocketPos = createVector(windowWidth / 2, windowHeight / 2)
-	// Rocket's position as variables
-	var rocketx = rocketPos.x
-	var rockety = rocketPos.y
-	// Rocket's new position
 
+	// 	// Rocket's X and Y position
+	// var rocketPos = createVector(windowWidth / 2, windowHeight / 2)
+	// // Rocket's position as variables
+	// var rocketx = rocketPos.x
+	// var rockety = rocketPos.y
+	// // Rocket's new position
+
+push()
 	translate(rocketPos.x, rocketPos.y)
 	rotate(Angle)
 	
@@ -29,4 +31,5 @@ function Rocket() {
 	// Tip of rocket
 	fill('rgb(255, 50, 50)')
 	triangle(0, 0 - rocketSize * 2, 0 - rocketSize / 2, 0 - rocketSize, 0 + rocketSize / 2, 0 - rocketSize)
+pop()
 }
