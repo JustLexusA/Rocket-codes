@@ -2,6 +2,13 @@ function Rocket() {
 	clear()
 	strokeWeight(2)
 	rectMode(CENTER)
+	
+	// Rocket's X and Y position
+	var rocketpos = createVector(windowWidth / 2, windowHeight / 2)
+
+	// Rocket's position as variables
+	var rocketx = rocketpos.x
+	var rockety = rocketpos.y
 
 
 	translate(rocketpos.x, rocketpos.y)
