@@ -9,7 +9,7 @@ var rotationamount = 2
 	var speedy;
 
 	// Size of the rocket
-	let rocketsize = 75;
+	let rocketSize = 75;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
