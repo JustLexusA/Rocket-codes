@@ -16,6 +16,7 @@ var speedY = -2
 // Magnitude of acceleration of the rocket
 var Acceleration = 0.25
 var Accelerate = true
+var Decelerate = true
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);

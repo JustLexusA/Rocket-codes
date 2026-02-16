@@ -12,6 +12,12 @@ function Accel(){
 		} else if (speedY >= -10){
 			Accelerate = true
 	}
+	if (speedY >= 0){
+			Decelerate = false
+		} else if (speedY < 0){
+			Decelerate = true
+	}
+
 	// Pressing 'W' will cause the rocket to accelerate.
 	if (Accelerate === true){
 		if (keyIsDown(87)){
@@ -19,10 +25,12 @@ function Accel(){
 		}
 	}
 	// Pressing 'S' will cause the rocket to deccelerate.
+	if (Decelerate === true){
 		if 	(keyIsDown(83)){
 		speedY += Acceleration
+		}
 	}
-	print(Accelerate)
+	print(Decelerate)
 	print(speedY)
 
 }
