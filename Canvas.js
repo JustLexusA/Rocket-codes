@@ -1,12 +1,21 @@
+// Position of the rocket
 var rocketPos;
 var rocketx;
 var rockety;
 
-var Angle = 90
-var rotationamount = 2
+// Rotation of the rocket
+var Angle = 0
+var rotationamount = 5
 
-	// Size of the rocket
-	let rocketSize = 75;
+// Size of the rocket
+let rocketSize = 35;
+
+// Velocity of the rocket
+var speedY = -2
+
+// Magnitude of acceleration of the rocket
+var Acceleration = 0.25
+var Accelerate = true
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);

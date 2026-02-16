@@ -3,17 +3,10 @@ function Rocket() {
 	strokeWeight(2)
 	rectMode(CENTER)
 
-
-	// 	// Rocket's X and Y position
-	// var rocketPos = createVector(windowWidth / 2, windowHeight / 2)
-	// // Rocket's position as variables
-	// var rocketx = rocketPos.x
-	// var rockety = rocketPos.y
-	// // Rocket's new position
-
 push()
 	translate(rocketPos.x, rocketPos.y)
 	rotate(Angle)
+	textSize(10)
 	
 	// Rocket body
 	fill('rgb(255, 50, 50)')

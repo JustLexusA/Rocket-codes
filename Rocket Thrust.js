@@ -1,21 +1,28 @@
 function Thrust(){
-var vertMove = false
-var horiMove = false
-if (keyIsPressed === true) {
-	if (keyCode === 87||keyCode === 87) {
-	vertMove = true
-	}
-}	else if (keyCode === 83||keyCode === 83) {
-	vertMove = false
-	}
+	// Vertical movement of the rocket
+ForwardThrust = createVector(0, speedY).rotate(Angle)
+rocketPos.add(ForwardThrust)
 
-var speedy = createVector(0, -5).rotate(Angle)
-var speedx = createVector(5, 0).rotate(Angle)
+}
 
-	if (vertMove === true) {
-	rocketPos.add(speedy)
-	print(vertMove)
+function Accel(){
+	// Checks for velocity to whether let the rocket continue accelerating or not.
+	if (speedY <= -10){
+			Accelerate = false
+		} else if (speedY >= -10){
+			Accelerate = true
 	}
-
+	// Pressing 'W' will cause the rocket to accelerate.
+	if (Accelerate === true){
+		if (keyIsDown(87)){
+			speedY -= Acceleration
+		}
+	}
+	// Pressing 'S' will cause the rocket to deccelerate.
+		if 	(keyIsDown(83)){
+		speedY += Acceleration
+	}
+	print(Accelerate)
+	print(speedY)
 
 }

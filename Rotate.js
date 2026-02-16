@@ -1,7 +1,10 @@
 function Rotate() {
+// Counter-clockwise rotation
 	if (keyIsDown(LEFT_ARROW)) {
 		Angle -= rotationamount
-	} else if (keyIsDown(RIGHT_ARROW)) {
+	} 
+// Clockwise rotation
+	else if (keyIsDown(RIGHT_ARROW)) {
 		Angle += rotationamount
 	}
 }
